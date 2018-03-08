@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <questions>
-  <question seconds="2">
+  <question seconds="5">
     <title>Сколько байт в килобайте?</title>
     <answers>
       <answer correct="true">1024</answer>

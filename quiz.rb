@@ -12,10 +12,9 @@ victorine = Victorine.new(doc)
 
 victorine.run
 
-result = victorine.result
-
 puts
 puts "Рассчитываем результат: "
+result = victorine.result
 sleep 2
 
 puts result

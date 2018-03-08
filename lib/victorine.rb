@@ -32,20 +32,20 @@ class Victorine
 
   def run
     questions_all.each do |q|
-      puts q.question
-
+      puts "Вопрос: #{q.question}"
+      puts "Время на ответ: #{q.seconds_to_answer} сек."
+      puts "Варианты ответов: \n\r#{q.answers_text}"
       time_start = Time.now
       user_answer = STDIN.gets.chomp
       time_end = Time.now
       @time_all += (time_end - time_start)
-      correct_user_anwer = (user_answer == q.correct_answer.to_s)
 
       if q.seconds_to_answer.to_i <= (time_end - time_start).to_i
         puts "Время на ответ истелко. Ответ не засчитан"
         @late_answers_count += 1
         next
       else
-        if correct_user_anwer
+        if user_answer == q.correct_answer.to_s
           puts "Верно"
           @correct_answers_count += 1
         else
@@ -55,6 +55,8 @@ class Victorine
       end
     end
   end
+
+
 
   def result
     correct_answers_result = "\tПравильных ответов: #{@correct_answers_count}\n\r"

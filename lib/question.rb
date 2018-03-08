@@ -10,4 +10,12 @@ class Question
   def correct_answer
     @answers.key("true")
   end
+
+  def answers_text
+    answers = ""
+    @answers.keys.each_with_index do |answer, index|
+      answers << "#{index + 1}. #{answer}\n\r"
+    end
+    answers
+  end
 end
