@@ -7,8 +7,9 @@
 1. Скачайте архив с репозиторием. 
 2. Распакуйте. 
 3. В консоли перейдите в папку с программой и наберите: 
-
+```
     ruby quiz.rb
+```
 
 ## Настройка
-Для работы необходимо установить [Ruby]("https://www.ruby-lang.org/ru/documentation/installation/")
+Для работы необходимо установить [Ruby](https://www.ruby-lang.org/ru/documentation/installation/)
