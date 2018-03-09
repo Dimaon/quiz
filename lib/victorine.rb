@@ -37,7 +37,7 @@ class Victorine
       time_start = Time.now
 
       begin
-        puts "Введите номер ответа: "
+        puts "Введите номер ответа от 1 до #{q.answers.size}: "
         user_answer = STDIN.gets.to_i
       end until user_answer > 0 && user_answer <= q.answers.size
 
