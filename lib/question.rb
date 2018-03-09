@@ -1,5 +1,5 @@
 class Question
-  attr_accessor :question, :seconds_to_answer
+  attr_accessor :question, :seconds_to_answer, :answers
 
   def initialize(qa)
     @question = qa[:question]
@@ -16,6 +16,7 @@ class Question
     @answers.keys.each_with_index do |answer, index|
       answers << "#{index + 1}. #{answer}\n\r"
     end
+    # Строка с ответами
     answers
   end
 end
